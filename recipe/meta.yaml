@@ -9,9 +9,6 @@ source:
 build:  # [not win]
   skip: True  # [not win]
 
-test:
-  []
-
 about:
   home: https://code.google.com/archive/p/msinttypes/
   license: BSD 3
