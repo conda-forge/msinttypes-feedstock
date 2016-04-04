@@ -1,4 +1,3 @@
-
 # This file was generated automatically from conda-smithy. To update this configuration,
 # update the conda-forge.yaml and/or the recipe/meta.yaml.
 
@@ -7,13 +6,16 @@ language: objective-c
 env:
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
-    - secure: "JrZbWYW4wEz5IKYwsbabnElGN9St4sYfO7HoPRx+A7h4yWXcfIO9+nz/HK67J0h72WRMem/lx5qX/flr1iX0e8zn3cSH8ujMjuZ5grfQj4PCHqeZvC4gThsxNbQ3iqmjD5LbXf6KYX0b9coyv9uIBsG8GF22GHE5XceQu2Ax4BFGtAwthxZpL3mW+pf3ziuaRABen2ru4RvFBe1WbI/7+k3ev6uvsMmEd5qm4V8/GdNVdl9JmhmXCU16dgiOdNjLSjKWgUKVnqgcMQy/+9zcCrOR8WcpvWHq8kmEBsVFAhL5OL7SX8A309WZJ18prT48XpuX1wF12fnPmOrrJB+2MqGuwyBimaQAlPNOLVgLOfm4eAYJJQHzzFiPZXy2xD3v1y1QkxHFrsrYMrB6fcVfTKW/Vte+oIv5RZQQh2O9NT0mCLuitsZ4x06jWtvPQBTpe5fX2TTIESfsxxRdkzIei/34jlXYaExfzGuwSI758nk0HFOI4O3A/UGDujANd9RxomkecSI0qFamBvkJcQ7He9ucVol6G+OKPm1HY46ysxPajkkbvRCw+Jf3I7kc2pFJ23bfzW5KgY48BK0+FHjE6u8lHjzu6BItSXQ/JV9YQiVUeRiSQbusANAF4B3op77qzwP/N+3LO+3K1pzYnkjHPLsDT6yRvMqF4Yrl0NoyFmg="
+    - secure: "Wne+OSP4OmpIdELUmScwK80AwDOvzw+0xeCWiw+vGF7DBLQeqc7cZeR3v0dDbT+rSVpt7Ph5w4gZo3CgYKuTO6r8+8wRNOAnU6llxiw/AjQlHCl7BYTkr8oeQiejydvPM+SmA20BTmYUxhaL0xtmBNumFoCQMp3TbjP2YZQle2C+Z04v1VkOJVYk6mGLkPf8c6ghmgNQNqfDrBeiproKpZEzo74CPvbjH8TTHqnCdQ3x82zmIZYQsRzh8B/qo1pyzQv7fd3J2JcnGpJAhh940o1MfOlEfkU5/MwrdIqQBpUz81nC2IAnLejHUhHPt0knIh1M/DvL0t1+rbBQz5qKNuZZCRKTAk9B1we49g3z4w6SryvXNgKGMs9oa/4syCajm0g47GItyCb2YV57HPt/viu/55HG280eXIthqxZUYhc52P/rXdATtmIFKuDUAG7FWTKJxRneOp7DsvoSzoxygohkzbP5TJam0iTilOO8VUURbRSAgz/l8CRHz2ipuqCtr5HIpep2XANuTEezzNiXQtTOYOKI/Te6lQFzAoVTsAXKyGX1OfnvnMy3hBDBbgf/IeJs4a4tsEc97ycEbrYjjQnUXDwzk24OyRUb7ALzZdgKbgJ6a1AteyLTCFgRAEjqGy0RQVE3l4V/p8YKdvFg5y6aP0S2gvdt3wcaELaS+wo="
 
+
+before install:
+    - brew remove --force $(brew list)
 
 install:
     - |
       MINICONDA_URL="http://repo.continuum.io/miniconda"
-      MINICONDA_FILE="Miniconda3-3.7.3-MacOSX-x86_64.sh"
+      MINICONDA_FILE="Miniconda3-latest-MacOSX-x86_64.sh"
       wget "${MINICONDA_URL}/${MINICONDA_FILE}"
       bash $MINICONDA_FILE -b
 
@@ -21,8 +23,6 @@ install:
 
       conda update --yes conda
       conda install --yes conda-build jinja2 anaconda-client
-
-      
       conda config --add channels conda-forge
       
 

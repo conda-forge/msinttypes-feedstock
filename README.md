@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/msinttypes-feedstock.sv
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/msinttypes-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/msinttypes-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msinttypes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msinttypes-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msinttypes/badges/version.svg)](https://anaconda.org/conda-forge/msinttypes)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msinttypes/badges/downloads.svg)](https://anaconda.org/conda-forge/msinttypes)
+
 
 Updating msinttypes-feedstock
 =============================
