@@ -1,21 +1,31 @@
 package:
-  name: msinttypes
-  version: r26
+    name: msinttypes
+    version: r26
 
 source:
-  url: https://msinttypes.googlecode.com/files/msinttypes-r26.zip 
-  fn: msinttypes-r26.zip
+    url: https://msinttypes.googlecode.com/files/msinttypes-r26.zip
+    fn: msinttypes-r26.zip
+    md5: 94c6acec78be290fc72cd01f2755341a
 
-build:  # [not win]
-  skip: True  # [not win]
+build:
+    number: 1
+    skip: True  # [not win]
+    features:
+        - vc9  # [win and py27]
+        - vc10  # [win and py34]
+        - vc14  # [win and py35]
+
+requirements:
+    build:
+        - python  # [win]
 
 about:
-  home: https://code.google.com/archive/p/msinttypes/
-  license: BSD 3
-  summary: "ISO C9x compliant stdint.h and inttypes.h for Microsoft Visual Studio"
+    home: https://code.google.com/archive/p/msinttypes/
+    license: BSD-3-Clause
+    summary: ISO C9x compliant stdint.h and inttypes.h for Microsoft Visual Studio
 
 extra:
-  recipe-maintainers:
-    - pelson
-    - ocefpaf
-    - JanSchulz
+    recipe-maintainers:
+        - janschulz
+        - ocefpaf
+        - pelson
