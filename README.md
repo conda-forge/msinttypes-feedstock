@@ -3,7 +3,7 @@ About msinttypes
 
 Home: https://code.google.com/archive/p/msinttypes/
 
-Package license: BSD 3
+Package license: BSD-3-Clause
 
 Feedstock license: BSD
 
