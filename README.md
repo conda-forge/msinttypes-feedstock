@@ -5,7 +5,7 @@ Home: https://code.google.com/archive/p/msinttypes/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: ISO C9x compliant stdint.h and inttypes.h for Microsoft Visual Studio
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/msinttypes-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/msinttypes-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/msinttypes-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/msinttypes-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msinttypes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msinttypes-feedstock/branch/master)
