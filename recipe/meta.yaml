@@ -8,16 +8,8 @@ source:
     md5: 94c6acec78be290fc72cd01f2755341a
 
 build:
-    number: 1
+    number: 2
     skip: True  # [not win]
-    features:
-        - vc9  # [win and py27]
-        - vc10  # [win and py34]
-        - vc14  # [win and py35]
-
-requirements:
-    build:
-        - python  # [win]
 
 about:
     home: https://code.google.com/archive/p/msinttypes/
