@@ -11,6 +11,18 @@ Summary: ISO C9x compliant stdint.h and inttypes.h for Microsoft Visual Studio.
 
 
 
+Current build status
+====================
+
+Linux: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msinttypes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msinttypes-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msinttypes/badges/version.svg)](https://anaconda.org/conda-forge/msinttypes)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msinttypes/badges/downloads.svg)](https://anaconda.org/conda-forge/msinttypes)
+
 Installing msinttypes
 =====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `msinttypes` available on your pla
 ```
 conda search msinttypes --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msinttypes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msinttypes-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msinttypes/badges/version.svg)](https://anaconda.org/conda-forge/msinttypes)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msinttypes/badges/downloads.svg)](https://anaconda.org/conda-forge/msinttypes)
 
 
 Updating msinttypes-feedstock
